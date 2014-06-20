@@ -69,7 +69,7 @@ preview:
 ------------
 `container` element wraps your content and sizes it according to your breakpoint settings.
 
-`container-fluid` class works like container but with no breakpoints, resizing constantly.
+`fluid-container` class works like container but with no breakpoints, resizing constantly.
 
 `container--fixed-top` modifier fixes your container to the top of the screen.
 
@@ -180,21 +180,21 @@ preview:
 	</div>
 </div>
 
-## Tabs
+## Tabbed Navigation
 -------
-The `tabs` block is used to build tabbed navigations.
+The `tabbed-navigation` block is used to build a navigation that has equal width navigation items.
 
 code:
 
 ``` html
-<ul class="tabs">
-	<li class="tabs__item">
+<ul class="tabbed-navigation">
+	<li class="tabbed-navigation__item">
 		<a href="#">Item 1</a>
 	</li>
-	<li class="tabs__item tabs__item--is-active">
+	<li class="tabbed-navigation__item tabbed-navigation__item--is-active">
 		<a href="#">Item 2</a>
 	</li>
-	<li class="tabs__item">
+	<li class="tabbed-navigation__item">
 		<a href="#">Item 3</a>
 	</li>
 </ul>
@@ -202,14 +202,14 @@ code:
 
 preview:
 
-<ul class="tabs">
-	<li class="tabs__item">
+<ul class="tabbed-navigation">
+	<li class="tabbed-navigation__item">
 		<a href="#">Item 1</a>
 	</li>
-	<li class="tabs__item tabs__item--is-active">
+	<li class="tabbed-navigation__item tabbed-navigation__item--is-active">
 		<a href="#">Item 2</a>
 	</li>
-	<li class="tabs__item">
+	<li class="tabbed-navigation__item">
 		<a href="#">Item 3</a>
 	</li>
 </ul>
