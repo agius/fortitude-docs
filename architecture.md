@@ -28,7 +28,7 @@ First, lets talk about writing good CSS.
 5. if you're using a preprocessor like Scss put your extends before your mixins and both of them at the top of the selector. If you think about it this is a logical thing to do and will save you from headaches down the road. if you use extend you want those properties to come first, then you will mixin functionality using a mixin, and finally you will describe that selector using the properties you set.
 
 
-```
+``` scss
 /*------------------------------------*\
 #MEDIA
 \*------------------------------------*/
@@ -102,12 +102,12 @@ First, lets talk about writing good CSS.
 1. Only sort properties alphabetically if you can, for some reason someone decided to make the border-radius properties the only properties that can't be sorted alphabetically because of how the CSS Cascade works. Example below.
 
 
-```
+``` scss
 border-radius: 10px;
 border-top-left-radius: 5px;
 ```
 
-```
+``` scss
 /* instead they should of named them like this, but oh well.... */
 border-radius: 10px;
 border-radius-top-left: 5px;
@@ -123,7 +123,7 @@ And usually a designer will want to make buttons/inputs bigger so they're more f
 
 However, you as the web developer will often do something like this:
 
-```
+``` scss
 .button {
     ...
     height: 3em;
@@ -159,8 +159,7 @@ You can write your own tests too so if you need to test a feature that isn't apa
 
 So, using something like Modernizr the previous solution would look like this.
 
-```
-
+``` scss
 .button {
     ...
     height: 1em;
